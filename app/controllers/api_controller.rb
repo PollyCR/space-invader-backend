@@ -1,8 +1,8 @@
 class ApiController < ApplicationController
 
     def getAPOD 
-response = JSON.parse(RestClient.get("https://api.nasa.gov/planetary/apod?api_key=dDeY37wmDM7xBJg1VaHRAb0dFVHdgDUHQhPzdORm"))
-render json: response
+        response = JSON.parse(RestClient.get("https://api.nasa.gov/planetary/apod?api_key=dDeY37wmDM7xBJg1VaHRAb0dFVHdgDUHQhPzdORm"))
+        render json: response
     end
 
     def getLaunch 
