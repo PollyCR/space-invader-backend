@@ -1,3 +1,4 @@
 class ChatroomSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :description, :name
+  has_many :messages
 end
