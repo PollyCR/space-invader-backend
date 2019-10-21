@@ -1,7 +1,6 @@
 class AuthController < ApplicationController
 
     def create
-        # byebug
         user = User.find_by(username: user_login_params[:username])
         
         if user && user.authenticate(user_login_params[:password])
