@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   resources :chatrooms
   resources :users
 
+  post "/login", to: "auth#create"
+  post "/signup", to: "users#create"
+  post "/validate", to: "auth#validate"
   get "/api/APOD", to: "api#getAPOD"
   get "/api/asteroid", to: "api#getAsteroid"
   get "/api/launch", to: "api#getLaunch"
