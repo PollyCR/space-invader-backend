@@ -11,5 +11,5 @@ User.destroy_all
 Chatroom.destroy_all
 
 
-chatrooms = Chatroom.create([{name: "#space", description: "Exactly what it says on the rocket-proof tin of powdered food. Yum, intergalactic ice cream."}, {name: "#random", description: "I am very potato."}])
+chatrooms = Chatroom.create([{name: "#space", description: "Chat about Space"}, {name: "#random", description: "Random Thoughts"}])
 
