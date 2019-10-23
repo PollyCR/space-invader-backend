@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount ActionCable.server => '/cable'
   resources :messages
   resources :chatrooms
   resources :users
@@ -10,6 +11,5 @@ Rails.application.routes.draw do
   get "/api/asteroid", to: "api#getAsteroid"
   get "/api/launch", to: "api#getLaunch"
 
-  mount ActionCable.server => '/cable'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
