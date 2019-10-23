@@ -6,7 +6,7 @@ Rails.application.configure do
 
   # websockets & redis on heroku
   config.web_socket_server_url = "wss://s-i-backend.herokuapp.com/cable"
-  config.action_cable.allowed_request_origins = [%r{*}]
+  config.action_cable.allowed_request_origins = [/*/]
 
   # config/environments/production.rb
 
