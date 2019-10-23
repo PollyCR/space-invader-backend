@@ -7,4 +7,4 @@ test:
 production:
   adapter: redis
   url: redis://redistogo:447814cc2762bb93d7f417cfb92d9ca3@hammerjaw.redistogo.com:11994/
-  channel_prefix: space_invader_backend_production
+  # channel_prefix: space_invader_backend_production
